@@ -147,7 +147,7 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)args)
             activityView.popoverPresentationController.permittedArrowDirections = 0;
         }
     }
-    [ctrl presentViewController:activityView animated:YES completion:nil];
+    [ctrl.presentedViewController presentViewController:activityView animated:YES completion:nil];
 }
 
 @end
